@@ -113,7 +113,7 @@ const Bucket_Batches = () => {
     <div className="mb-6 flex justify-between items-center">
       <h1 className="text-xl sm:text-2xl font-bold text-gray-800">Bucket Batches</h1>
       <button
-        onClick={() => navigate('/material/create')}
+        onClick={() => navigate('/storage/create')}
         className="px-4 py-2 bg-indigo-600 hover:bg-indigo-700 text-white rounded-md text-sm sm:text-base"
       >
         Add Storage

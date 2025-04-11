@@ -25,6 +25,7 @@ import ViewOrder from "./pages/ViewOrder";
 import ViewRecipe from "./pages/ViewRecipe";
 import Bucket_Batches from "./pages/Bucket_Batches";
 import ViewMaterial from "./pages/ViewMaterial";
+import StorageForm from "./pages/StorageForm";
 
 // Layout component to wrap routes and include Topbar conditionally
 function Layout({ children }) {
@@ -60,6 +61,12 @@ export default function App() {
             path="/material/create"
             element={<MaterialForm setMaterials={setMaterials} />}
           />
+
+<Route
+            path="/storage/create"
+            element={<StorageForm setMaterials={setMaterials} />}
+          />
+
           <Route path="/recipes/edit/:recipe_id" element={<RecipeEditForm />} />
           <Route path="/material/:material_id" element={<EditMaterial />} />
           <Route path="/material/view/:material_id" element={<ViewMaterial />} />
